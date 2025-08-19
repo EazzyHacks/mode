@@ -1,4 +1,3 @@
-
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
   let isEnable = /true|enable|(turn)?on|1/i.test(command);
   let chat = global.db.data.chats[m.chat];
@@ -68,6 +67,15 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       bot.antiSpam = isEnable;
       break;
 
+     case 'antinopor':
+      isAll = true;
+      if (!isOwner) {
+        global.dfail('owner', m, conn);
+        throw false;
+      }
+      chat.antiLinkxxx = isEnable;
+      break;
+
     case 'audios':
     case 'audiosbot':
     case 'botaudios':
@@ -134,14 +142,14 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       chat.antiLink = isEnable;
       break;
 
-    case 'antibot2':
+    case 'antibot':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
           throw false;
         }
       }
-      chat.antiBot2 = isEnable;
+      chat.antiBot = isEnable;
       break;
 
     case 'modoadmin':
@@ -175,6 +183,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     case 'antiarabes':
     case 'antinegros':
     case 'antifakes':
+    case 'onlylatinos':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -228,14 +237,12 @@ para el bot
 `.trim())
       throw false
   }
-   m.reply(`🌸 𝙄𝙣𝙛𝙤𝙧𝙢𝙖𝙘𝙞𝙤́𝙣 𝙙𝙚𝙡 𝘾𝙤𝙢𝙖𝙣𝙙𝙤 🌟
 
-🧩 𝗖𝗼𝗺𝗮𝗻𝗱𝗼: *${type}*
-👤 𝗘𝘀𝘁𝗮𝗱𝗼: *${isEnable? '✅ 𝘈𝘤𝘵𝘪𝘷𝘢𝘥𝘰': '⛔ 𝘋𝘦𝘴𝘢𝘤𝘵𝘪𝘷𝘢𝘥𝘰'}*
-📡 𝗔𝗽𝗹𝗶𝗰𝗮: ${isAll? '*🌍 𝘌𝘯 𝘵𝘰𝘥𝘰 𝘦𝘭 𝘣𝘰𝘵*': isUser? '*🙋‍♂️ 𝘜𝘴𝘶𝘢𝘳𝘪𝘰 𝘦𝘴𝘱𝘦𝘤𝘪́𝘧𝘪𝘤𝘰*': '*💬 𝘌𝘯 𝘦𝘴𝘵𝘦 𝘤𝘩𝘢𝘵*'}
+m.reply(`⚠️ 𝐄𝐯𝐨𝐥𝐮𝐭𝐢𝐨𝐧 𝐂𝐨𝐧𝐟𝐢𝐠 ⚠️
 
-🌟 𝘎𝘳𝘢𝘤𝘪𝘢𝘴 𝘱𝘰𝘳 𝘶𝘴𝘢𝘳 𝘛𝘩𝘦𝘔𝘪𝘬𝘶𝘉𝘰𝘵 ✨
-`)
+⚜️ 𝐂𝐨𝐦𝐚𝐧𝐝𝐨 𝐄𝐣𝐞𝐜𝐮𝐭𝐚𝐝𝐨 : ${type}
+〽️ 𝐒𝐭𝐚𝐭𝐮𝐬 : ${isEnable? 'Activado': 'Desactivado'}
+🗣 𝐋𝐮𝐠𝐚𝐫 : ${isAll? 'En El Mejor Grupo': isUser? '*Usuario específico*': 'En El Chat De Evolution'}`)
 }
 
 handler.help = ['enable', 'disable', 'on', 'off']
