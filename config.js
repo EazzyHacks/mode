@@ -1,4 +1,4 @@
-import { watchFile, unwatchFile } from 'fs' 
+wimport { watchFile, unwatchFile } from 'fs' 
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import fs from 'fs'
@@ -9,12 +9,12 @@ import axios from 'axios'
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
   global.owner = [
-  [ '254575982448677@lid', 'AdrianOficial', true ],
-  [ '172056423456949@lid', 'Barboza', true ],
-  [ '111270153982054@lid', 'BAJO BOTS', true ],
-  [ '254575982448677@lid',     'AdrianOficial', true ],
-  [ '5355699866', true ],
-  [ '261271484104740', true ]
+  [ '120363401503042296@lid', 'Evolution Ofc', true ],
+  [ '120363401503042296@lid', 'Evolution Ofc', true ],
+  [ '120363401503042296@lid', 'Evolution Ofc', true ],
+  [ '120363401503042296@lid',     'Evolution Ofc', true ],
+  [ '51936994155', true ],
+  [ '120363401503042296', true ]
   ]
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -24,17 +24,17 @@ global.prems = []
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.packname = `[ 𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐁𝐲`
-global.author = '𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃]'
-global.stickpack = '𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃'
-global.stickauth = '𝐁𝐲 𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃'
-global.wm = '𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃'
+global.author = '𝗚𝗵𝗼𝘀𝘁 𝗠𝗼𝗱𝗲 𝗕𝘆]'
+global.stickpack = '𝗚𝗵𝗼𝘀𝘁 𝗠𝗼𝗱𝗲 𝗕𝘆'
+global.stickauth = '𝗚𝗵𝗼𝘀𝘁 𝗠𝗼𝗱𝗲 𝗕𝘆'
+global.wm = '𝗚𝗵𝗼𝘀𝘁 𝗠𝗼𝗱𝗲 𝗕𝘆'
 global.dev = '𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐁𝐲 𝐓𝐞𝐜𝐧𝐨𝐥𝐨𝐠𝐢𝐬 𝐠𝐫𝐮𝐩'
-global.wait = '*𝐏𝐨𝐫 𝐟𝐚𝐯𝐨𝐫 𝐚𝐠𝐮𝐚𝐫𝐝𝐞 𝐮𝐧 𝐦𝐨𝐦𝐞𝐧𝐭𝐨\n\n> 𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃*'
-global.botname = '[ 𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃 ]'
-global.textbot = `𝐓𝐞𝐜𝐧𝐨𝐥𝐨𝐠𝐢𝐬 𝐛𝐲 𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃`
+global.wait = '*𝐏𝐨𝐫 𝐟𝐚𝐯𝐨𝐫 𝐚𝐠𝐮𝐚𝐫𝐝𝐞 𝐮𝐧 𝐦𝐨𝐦𝐞𝐧𝐭𝐨\n\n> 𝗚𝗵𝗼𝘀𝘁 𝗠𝗼𝗱𝗲 𝗕𝘆'
+global.botname = '[ 𝗚𝗵𝗼𝘀𝘁 𝗠𝗼𝗱𝗲 𝗕𝘆 ]'
+global.textbot = `𝐓𝐞𝐜𝐧𝐨𝐥𝐨𝐠𝐢𝐬 𝐛𝐲 𝗚𝗵𝗼𝘀𝘁 𝗠𝗼𝗱𝗲 𝗕𝘆`
 global.dev = '𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐁𝐲 𝐓𝐞𝐜𝐧𝐨𝐥𝐨𝐠𝐢𝐬 𝐠𝐫𝐮𝐩'
 global.listo = '*𝐄𝐱𝐢𝐭𝐨*'
-global.namechannel = '𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃'
+global.namechannel = '𝗚𝗵𝗼𝘀𝘁 𝗠𝗼𝗱𝗲 𝗕𝘆'
 global.channel = 'https://whatsapp.com/channel/0029VaGt7Uk6WaKkEDZUh43W'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
@@ -44,9 +44,9 @@ global.miniurl = fs.readFileSync('./storage/img/miniurl.jpg')
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.group = 'https://chat.whatsapp.com/C92isvspFcXCtqv2PqCfHI'
-global.canal = 'https://whatsapp.com/channel/0029VaGt7Uk6WaKkEDZUh43W'
-global.insta = 'https://instagram.com/adri.analegresanchez'
+global.group = 'https://chat.whatsapp.com/I4yJ2vrlhGXH3JRg06mxFZ'
+global.canal = 'https://whatsapp.com/channel/0029Vb5oUp43LdQUVViHwc0m'
+global.insta = 'https://instagram.com/evolution.hack'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -54,7 +54,7 @@ global.catalogo = fs.readFileSync('./storage/img/catalogo.png');
 global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: packname, orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 
 global.ch = {
-ch1:'120363403726798403@newsletter'
+ch1:'120363419947391620@newsletter'
 }
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
