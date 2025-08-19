@@ -6,17 +6,17 @@ export async function before(m, { conn, participants, groupMetadata}) {
   try {
     if (!m.messageStubType ||!m.isGroup) return;
 
-    const imageLink = 'https://i.ibb.co/LYZrgRs/The-Miku-Bot-MD.jpg';
+    const imageLink = 'https://qu.ax/rZzaU.jpg';
     const user = `@${m.messageStubParameters[0].split('@')[0]}`;
     const groupName = groupMetadata.subject;
-    const groupDesc = groupMetadata.desc || '🌸 Grupo sin descripción';
+    const groupDesc = groupMetadata.desc || '👻 Grupo sin descripción';
     const chat = global.db?.data?.chats?.[m.chat];
 
     if (!chat ||!chat.bienvenida) return;
 
     const responseMap = {
       [WAMessageStubType.GROUP_PARTICIPANT_ADD]: {
-        text: `🌸 𝑾𝒆𝒍𝒄𝒐𝒎𝒆, ${user}!\n💫 𝑬𝒔𝒕𝒂𝒔 𝒆𝒏 *${groupName}*\n📝 ${groupDesc}\n📌 𝑫𝒊𝒗𝒊𝒆́𝒓𝒕𝒆 𝒚 𝒄𝒖𝒊𝒅𝒂 𝒍𝒂𝒔 𝒓𝒆𝒈𝒍𝒂𝒔`,
+        text: `👻 𝑾𝒆𝒍𝒄𝒐𝒎𝒆, ${user}!\n💫 𝑬𝒔𝒕𝒂𝒔 𝒆𝒏 *${groupName}*\n📝 ${groupDesc}\n📌 𝑫𝒊𝒗𝒊𝒆́𝒓𝒕𝒆 𝒚 𝒄𝒖𝒊𝒅𝒂 𝒍𝒂𝒔 𝒓𝒆𝒈𝒍𝒂𝒔`,
         mentions: [m.messageStubParameters[0]]
 },
       [WAMessageStubType.GROUP_PARTICIPANT_LEAVE]: {
@@ -38,6 +38,6 @@ export async function before(m, { conn, participants, groupMetadata}) {
 });
 }
 } catch (err) {
-    console.error("🌸 Error en mensaje grupal de bienvenida/despedida:", err);
+    console.error("👻 Error en mensaje grupal de bienvenida/despedida:", err);
 }
 }
