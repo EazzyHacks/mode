@@ -465,14 +465,14 @@ global.dfail = (type, m, conn, usedPrefix) => {
         botAdmin: " _*`⚠️ 𝗘𝘀 𝗻𝗲𝗰𝗲𝘀𝗮𝗿𝗶𝗼 𝗤𝘂𝗲 𝗦𝗲𝗮 𝗮𝗱𝗺𝗶𝗻 𝗣𝗥𝗜𝗠𝗘𝗥𝗢 𝗣𝗔𝗥𝗔 𝘂𝘀𝗮𝗿 𝗲𝘀𝘁𝗮 𝗳𝘂𝗻𝗰𝗶𝗼́𝗻⚡`*_",
         unreg: `
 ╭── ❗ *USUARIO NO REGISTRADO* ❗
-│ 🌸 No puedes usar este comando todavía.
+│ No puedes usar este comando todavía.
 │
 │ 🔐 *¿Cómo registrarse?*
 │ 📌 Usa: *.reg nombre.edad*
 │
 │ ✏️ *Ejemplo:*
-│ ➤.reg Miku.20
-╰─────────────🌸 
+│ ➤.reg Ghost.20
+╰───────────── 
 `
     }[type]
     if (msg) return  conn.reply(m.chat, msg, m, rcanal).then(_ => m.react('✖️'))
