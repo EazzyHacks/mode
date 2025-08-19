@@ -11,14 +11,14 @@ export async function before(m, { conn, participants, groupMetadata}) {
       participants: '0@s.whatsapp.net',
       remoteJid: 'status@broadcast',
       fromMe: false,
-      id: 'Miku🌸'
+      id: 'Ghost 👻'
 },
     message: {
       contactMessage: {
         vcard: `BEGIN:VCARD
 VERSION:3.0
 N:Miku;Bot;;;
-FN:Miku Bot 🌸
+FN:Ghost Mode 👻
 item1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}
 item1.X-ABLabel:Celular
 END:VCARD`
@@ -33,7 +33,7 @@ END:VCARD`
 
   const eventos = {
     21: {
-      mensaje: `🌸 *Nombre del grupo cambiado* 🌸\n👤 Usuario: ${usuario}\n🆕 Nuevo nombre: ${m.messageStubParameters[0]}`,
+      mensaje: `👻 *Nombre del grupo cambiado* 👻\n👤 Usuario: ${usuario}\n🆕 Nuevo nombre: ${m.messageStubParameters[0]}`,
       tipo: 'texto'
 },
     22: {
