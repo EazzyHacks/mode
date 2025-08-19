@@ -12,7 +12,7 @@ var handler = async (m, { conn, usedPrefix }) => {
     const rwait = '⏳'; // Emoji de espera
     m.react(rwait);
 
-    let sessionPath = './seccion-activas';
+    let sessionPath = 'Sesiones/Principal';
     try {
         if (!existsSync(sessionPath)) {
             return await conn.reply(m.chat, '💻 *La carpeta ya fue limpiada*', m);
@@ -44,7 +44,7 @@ var handler = async (m, { conn, usedPrefix }) => {
 
 handler.help = ['dsowner'];
 handler.tags = ['fix', 'owner'];
-handler.command = ['delai', 'delyaemori', 'dsowner', 'clearallsession'];
+handler.command = ['delai', 'fix', 'dsowner', 'clearallsession'];
 
 
 export default handler;
