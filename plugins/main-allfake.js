@@ -41,13 +41,13 @@ var handler = async function (m, conn, db) {
     let pushname = m.pushName || 'Sin nombre'
 
     // Datos generales del bot
-    let creador = 'Wa.me/595976126756'
+    let creador = 'Wa.me/51936994155'
     let ofcbot = conn.user.jid.split('@')[0]
-    let asistencia = 'Wa.me/595976126756'
+    let asistencia = 'Wa.me/51936994155'
 
     // Lista de canales
-    let canalIdM = ["120363414007802886@newsletter", "120363414007802886@newsletter"]
-    let canalNombreM = ["bot Miku", "✧┊┋◟🚀Miku-Bot🚀◞┊┋✧"]
+    let canalIdM = ["120363419947391620@newsletter", "120363419947391620@newsletter"]
+    let canalNombreM = ["", ""]
     
     async function getRandomChannel() {
         let randomIndex = Math.floor(Math.random() * canalIdM.length)
@@ -104,9 +104,9 @@ var handler = async function (m, conn, db) {
             externalAdReply: { 
                 showAdAttribution: true, 
                 title: "Texto del bot", 
-                body: '🚀 Adrián ᚐ҉ᚐ', 
+                body: '🚀 ᚐ҉ᚐ', 
                 previewType: "PHOTO", 
-                thumbnailUrl: "https://qu.ax/QGAVS.jpg", 
+                thumbnailUrl: "https://qu.ax/rZzaU.jpg", 
                 sourceUrl: "https://whatsapp.com/channel/0029Vaua0ZD3gvWjQaIpSy18", 
                 mediaType: 1, 
                 renderLargerThumbnail: false 
