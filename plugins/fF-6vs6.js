@@ -59,7 +59,7 @@ let handler = async (m, { conn, args }) => {
 }
 
 handler.help = ['6vs6 ( Lista 320 )']
-handler.tags = ['ffeeuu']
+handler.tags = ['freefireeeuu']
 handler.command = ['6vs6', '6vs6']
 handler.group = true
 handler.admin = true
@@ -131,5 +131,6 @@ ${data.jugadores.length < 6 || data.suplentes.length < 2 ? '(𝚁𝚎𝚊𝚌�
 
 
 export default handler
+
 
 
