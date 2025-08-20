@@ -8,29 +8,17 @@ let handler = async (m, { isPrems, conn, }) => {
   let img = 'https://i.ibb.co/J55dPST/garena-free-fire-logo-rosj9f102kpok60v.jpg';
   let texto = `> > 𝙈𝙀𝙉𝙐 𝘿𝙀 𝙁𝙍𝙀𝙀 𝙁𝙄𝙍𝙀 👑.
 
-👑 𝙁𝙍𝙀𝙀 𝙁𝙄𝙍𝙀 👑
-🖤 ➺ 🎫.donarsala
-🖤 ➺ 🗼.𝘉𝘦𝘳𝘮𝘶𝘥𝘢
-🖤 ➺ 🏝️.𝘗𝘶𝘳𝘨𝘢𝘵𝘰𝘳𝘪𝘰
-🖤 ➺ 🏜️.𝘒𝘢𝘭𝘢𝘩𝘢𝘳𝘪
-🖤 ➺ 🏗️.𝘕𝘦𝘹𝘵𝘦𝘳𝘳𝘢
-🖤 ➺ 🏞️.𝘈𝘭𝘱𝘦𝘴
-
-👑 𝙍𝙀𝙂𝙇𝘼𝙎 𝙂𝙀𝙉𝙀𝙍𝘼𝙇𝙀𝙎 👑
-🖤 ➺ 🎮.𝘳𝘦𝘨𝘭𝘢𝘴𝘭𝘪𝘥𝘦𝘳𝘦𝘴
-🖤 ➺ 🎮.𝘳𝘦𝘨𝘭𝘢𝘴𝘭𝘪𝘥𝘦𝘳𝘦𝘴2
 
 ▸▸ 𝙇𝙄𝙎𝙏𝘼 𝙑𝙀𝙍𝙎𝙐𝙎 👑 ◂◂
-⚔ ➺.4𝘷𝘴4 
-⚔ ➺.6𝘷𝘴6 
-⚔ ➺.8𝘷𝘴8 
-⚔ ➺.𝘴𝘤𝘳𝘪𝘮 
-⚔ ➺.12𝘷𝘴12 
-⚔ ➺.16𝘷𝘴16 
-⚔ ➺.20𝘷𝘴20 
-⚔ ➺.24𝘷𝘴24 
-
-🔗 [canal oficial](https://whatsapp.com/channel/0029Vb8kvXUBfxnzYWsbS81I)`;
+⚔ ➺.vs4 / Sur
+⚔ ➺.6vs6 / Sur
+⚔ ➺.vs4 / EeUu
+⚔ ➺.scrimsur / Sur
+⚔ ➺.scrimeeuu / EeUu
+⚔ ➺.cuadri / Sur
+⚔ ➺.cuadrilatero / EeUu
+⚔ ➺.vs6 / EeUu
+`;
 
   const fkontak = {
     "key": {
