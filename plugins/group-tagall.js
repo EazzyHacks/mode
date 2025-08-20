@@ -1,9 +1,9 @@
-const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, command, usedPrefix }) => {
+const handler = async (m, { isAdmin, conn, text, participants, args, command, usedPrefix }) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
 
   const customEmoji = global.db.data.chats[m.chat]?.customEmoji || '🍫';
 
-  if (!(isAdmin || isOwner)) {
+  if (!(isAdmin )) {
     global.dfail('admin', m, conn);
     throw false;
   }
@@ -22,6 +22,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
 handler.help = ['todos *<mensaje opcional>*'];
 handler.tags = ['group'];
 handler.command = ['todos', 'invocar', 'tagall']
+handler.group = true
 handler.admin = true
 
 export default handler;
