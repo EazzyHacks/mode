@@ -66,8 +66,8 @@ let handler = async (m, { text, conn, command }) => {
   }
 };
 
-handler.command = ['play'];
-handler.help = ['play <canción>'];
+handler.command = ['Ghost'];
+handler.help = ['Ghost <canción>'];
 handler.tags = ['downloader'];
 export default handler;
       
