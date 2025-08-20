@@ -3,6 +3,11 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
 
   const customEmoji = global.db.data.chats[m.chat]?.customEmoji || '🍫';
 
+  if (!(isAdmin || isOwner)) {
+    global.dfail('admin', m, conn);
+    throw false;
+  }
+
   const pesan = args.join` `;
   const oi = `*» INFO :* ${pesan}`;
   let teks = `*!  MENCION GENERAL  !*\n  *PARA ${participants.length} MIEMBROS* 🗣️\n\n ${oi}\n\n╭  ┄ 𝅄 ۪꒰ \`⡞᪲=͟͟͞${botname} ≼᳞ׄ\` ꒱ ۟ 𝅄 ┄\n`;
@@ -17,4 +22,8 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
 handler.help = ['todos *<mensaje opcional>*'];
 handler.tags = ['group'];
 handler.command = ['todos', 'invocar', 'tagall']
+handler.group = false
+handler.admin = true
+handler.botAdmin = true
+
 export default handler;
