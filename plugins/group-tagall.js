@@ -6,7 +6,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
 
   if (!(isAdmin || isOwner)) {
     global.dfail('admin', m, conn);
-    throw false;
+    throw true;
   }
 
   const pesan = args.join` `;
