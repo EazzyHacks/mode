@@ -18,6 +18,6 @@ handler.help = ['todos *<mensaje opcional>*'];
 handler.tags = ['group'];
 handler.command = ['todos', 'invocar', 'tagall']
 handler.group = true
-handler.admin = true
+handler.admin = false
 
 export default handler;
