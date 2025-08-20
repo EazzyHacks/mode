@@ -35,8 +35,7 @@ let handler = async (m, { text, conn, command }) => {
     const { title, artist, album, duration, popularity, releaseDate, spotifyLink, coverArt } = track;
 
     const msgInfo = `
-╔═ೋ═══❖═══ೋ═╗
-║  🎼 𝑻𝒉𝒆 𝑴𝒊𝒌𝒖 𝑩𝒐𝒕 🎼
+╔═ೋ═══❖═══ೋ═
 ║  🌌 𝐒𝐩𝐨𝐭𝐢𝐟𝐲 𝐌𝐮𝐬𝐢𝐜 𝐑𝐢𝐭𝐮𝐚𝐥 🌌
 ╠═ೋ═══❖═══ೋ═╣
 ║ 🎵 Título: ${title}
@@ -67,8 +66,8 @@ let handler = async (m, { text, conn, command }) => {
   }
 };
 
-handler.command = ['music'];
-handler.help = ['music <canción>'];
+handler.command = ['play'];
+handler.help = ['play <canción>'];
 handler.tags = ['downloader'];
 export default handler;
       
