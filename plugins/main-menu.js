@@ -8,10 +8,10 @@ const clockString = ms => {
   return [h, m, s].map(v => v.toString().padStart(2, '0')).join(':');
 };
 
-const imagen = "https://i.ibb.co/LYZrgRs/The-Miku-Bot-MD.jpg";
+const imagen = "https://qu.ax/rZzaU.jpg";
 
 const menuHeader = `
-╭━━━「 🌸 The-MikuBot-MD 」━━━╮
+╭━━━「 gHOST mODE 」━━━╮
 ┃ ¡Hola, %name!
 ┃ Nivel: %level | XP: %exp/%max
 ┃ Límite: %limit | Modo: %mode
@@ -25,7 +25,7 @@ const menuFooter = `
 ╭────────────┈
 │ 💡 Usa cada comando con su prefijo.
 │ ✨ El bot perfecto para animarte.
-│ 🛠 Desarrollado por @Miku-Staff
+│ 🛠 Desarrollado por @evlution.hack
 ╰────────────┈
 `;
 
@@ -55,6 +55,7 @@ let handler = async (m, { conn, usedPrefix: _p}) => {
     const name = await conn.getName(m.sender) || "Usuario";
 
     let categorizedCommands = {
+            "🔥 Free Fire": new Set(),
       "🎭 Anime": new Set(),
       "ℹ️ Info": new Set(),
       "🔎 Search": new Set(),
@@ -74,7 +75,6 @@ let handler = async (m, { conn, usedPrefix: _p}) => {
       "📀 Base de Datos": new Set(),
       "🔊 Audios": new Set(),
       "🗝️ Avanzado": new Set(),
-      "🔥 Free Fire": new Set(),
       "Otros": new Set()
 };
 
