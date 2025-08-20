@@ -1,4 +1,4 @@
-const handler = async (m, { isAdmin, conn, text, participants, args, command, usedPrefix }) => {
+const handler = async (m, { conn, text, participants, args, command, usedPrefix }) => {
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
 
   const customEmoji = global.db.data.chats[m.chat]?.customEmoji || '🍫';
@@ -17,7 +17,7 @@ const handler = async (m, { isAdmin, conn, text, participants, args, command, us
 handler.help = ['todos *<mensaje opcional>*'];
 handler.tags = ['group'];
 handler.command = ['todos', 'invocar', 'tagall']
-handler.group = true
-handler.admin = false
+handler.group = true;
+handler.botAdmin = true;
 
 export default handler;
