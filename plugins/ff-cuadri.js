@@ -71,7 +71,7 @@ let handler = async (m, { conn, args }) => {
 }
 
 handler.help = ['cuadri ( Lista Cuadrilatero)']
-handler.tags = ['ffsur']
+handler.tags = ['freefiresur']
 handler.command = ['cuadri2', 'cuadri']
 handler.group = true
 handler.admin = true
@@ -155,3 +155,4 @@ ${data.jugadores.length < 12 || data.suplentes.length < 2 ? '(𝚁𝚎𝚊𝚌�
 }
 
 export default handler
+
