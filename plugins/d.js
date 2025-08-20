@@ -12,7 +12,7 @@ var handler = async (m, { conn, usedPrefix }) => {
     const rwait = '⏳'; // Emoji de espera
     m.react(rwait);
 
-    let sessionPath = 'Sesiones/Principal';
+    let sessionPath = './Sesiones/Principal/';
     try {
         if (!existsSync(sessionPath)) {
             return await conn.reply(m.chat, '💻 *La carpeta ya fue limpiada*', m);
