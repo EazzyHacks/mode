@@ -4,10 +4,10 @@ let handler = async (m, { conn, args, command, usedPrefix }) => {
   const text = args.join(" ");
   if (!text) {
     return m.reply(
-      `╭─⬣「 *The-MikuBot-MD* 」⬣
+      `╭─⬣「 *The-Ghost-MD* 」⬣
 │ ≡◦ 🎧 *Uso correcto del comando:*
 │ ≡◦ ${usedPrefix + command} dj opus
-╰─⬣\n> The-MikuBot-MD`
+╰─⬣\n> The-Ghost-MD`
     );
   }
 
@@ -33,7 +33,7 @@ let handler = async (m, { conn, args, command, usedPrefix }) => {
 
     if (!detailJson.result?.music) {
       return m.reply(
-        `╭─⬣「 *The-MikuBot-MD* 」⬣
+        `╭─⬣「 *The-Ghost-MD* 」⬣
 │ ≡◦ ⚠️ *No se pudo obtener el audio de:* ${title}
 ╰─⬣`
       );
@@ -65,7 +65,7 @@ let handler = async (m, { conn, args, command, usedPrefix }) => {
   } catch (e) {
     console.error(e);
     return m.reply(
-      `╭─⬣「 *The-MikuBot-MD* 」⬣
+      `╭─⬣「 *The-Ghost-MD* 」⬣
 │ ≡◦ ⚠️ *Error al procesar la solicitud.*
 │ ≡◦ Intenta nuevamente más tarde.
 ╰─⬣`
