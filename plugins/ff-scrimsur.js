@@ -56,7 +56,7 @@ let handler = async (m, { conn, args }) => {
 }
 
 handler.help = ['scrim ( Lista Scrim )']
-handler.tags = ['ffsur']
+handler.tags = ['freefiresur']
 handler.command = ['scrim', 'scrim']
 handler.group = true
 handler.admin = true
@@ -123,5 +123,6 @@ ${data.jugadores.length < 4 || data.suplentes.length < 2 ? '(𝚁𝚎𝚊𝚌�
 
   return false
 }
+
 
 export default handler
