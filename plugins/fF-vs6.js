@@ -30,7 +30,7 @@ let handler = async (m, { conn, args }) => {
   let plantilla = `
 ╭·····················➤
 │ ✭⋆ ⸒ ⚔️ Modalidad: 320
-│ ✭⋆ ⸒ ⏰ Horario: ${horaUsuario}🇲🇽  ⌇ ${horaAdelantada}🇨🇴
+│ ✭⋆ ⸒ ⏰ Horario: ${horaUsuario}🇵🇪 ⌇ ${horaAdelantada}🇦🇷
 │ ✭⋆ ⸒ 🫶🏼 Genero: ${genero}
 │ ʿ  🥷🏻: 
 │ ʿ  🥷🏻: 
@@ -58,8 +58,8 @@ let handler = async (m, { conn, args }) => {
   }
 }
 
-handler.help = ['vs6 ( Lista 320 )']
-handler.tags = ['freefireeeuu']
+handler.help = ['vs6 ( Lista By )']
+handler.tags = ['freefiresur']
 handler.command = ['vs6', 'vs6']
 handler.group = true
 handler.admin = true
@@ -99,7 +99,7 @@ handler.before = async function (m) {
 
   let plantilla = `
 │ ✭⋆ ⸒ ⚔️ Modalidad: By
-│ ✭⋆ ⸒ ⏰ Horario: ${horaUsuario}🇲🇽  ⌇ ${horaAdelantada}🇨🇴
+│ ✭⋆ ⸒ ⏰ Horario: ${horaUsuario}🇵🇪  ⌇ ${horaAdelantada}🇦🇷
 │ ✭⋆ ⸒ 🫶🏼 Genero: ${genero}
 │ ʿ  🥷🏻: ${jugadores[0] || ''}
 │ ʿ  🥷🏻: ${jugadores[1] || ''}
@@ -130,4 +130,5 @@ ${data.jugadores.length < 6 || data.suplentes.length < 2 ? '(𝚁𝚎𝚊𝚌�
 
 
 export default handler
+
 
