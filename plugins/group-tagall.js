@@ -5,7 +5,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
 
   if (!(isAdmin || isOwner)) {
     global.dfail('admin', m, conn);
-    throw false;
+    throw true;
   }
 
   const pesan = args.join` `;
@@ -22,7 +22,7 @@ const handler = async (m, { isOwner, isAdmin, conn, text, participants, args, co
 handler.help = ['todos *<mensaje opcional>*'];
 handler.tags = ['group'];
 handler.command = ['todos', 'invocar', 'tagall']
-handler.group = false
+handler.group = true
 handler.admin = true
 handler.botAdmin = true
 
