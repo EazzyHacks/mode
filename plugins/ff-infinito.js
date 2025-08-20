@@ -56,7 +56,7 @@ let handler = async (m, { conn, args }) => {
 }
 
 handler.help = ['500 ( Lista Infinito )']
-handler.tags = ['ffsur']
+handler.tags = ['freefiresur']
 handler.command = ['500', 'infinito']
 handler.group = true
 handler.admin = true
@@ -126,3 +126,4 @@ ${data.jugadores.length < 4 || data.suplentes.length < 2 ? '(𝚁𝚎𝚊𝚌�
 
 
 export default handler
+
