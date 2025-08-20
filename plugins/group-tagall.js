@@ -3,11 +3,6 @@ const handler = async (m, { isAdmin, conn, text, participants, args, command, us
 
   const customEmoji = global.db.data.chats[m.chat]?.customEmoji || '🍫';
 
-  if (!(isAdmin )) {
-    global.dfail('admin', m, conn);
-    throw false;
-  }
-
   const pesan = args.join` `;
   const oi = `*» INFO :* ${pesan}`;
   let teks = `*!  MENCION GENERAL  !*\n  *PARA ${participants.length} MIEMBROS* 🗣️\n\n ${oi}\n\n╭  ┄ 𝅄 ۪꒰ \`⡞᪲=͟͟͞${botname} ≼᳞ׄ\` ꒱ ۟ 𝅄 ┄\n`;
