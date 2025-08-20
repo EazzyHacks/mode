@@ -11,7 +11,7 @@ const clockString = ms => {
 const imagen = "https://qu.ax/rZzaU.jpg";
 
 const menuHeader = `
-╭━━━「 gHOST mODE 」━━━╮
+╭━━━「 Ghosd Mode 」━━━╮
 ┃ ¡Hola, %name!
 ┃ Nivel: %level | XP: %exp/%max
 ┃ Límite: %limit | Modo: %mode
@@ -55,7 +55,8 @@ let handler = async (m, { conn, usedPrefix: _p}) => {
     const name = await conn.getName(m.sender) || "Usuario";
 
     let categorizedCommands = {
-            "🔥 Free Fire": new Set(),
+      "🔥 Free Fire Sur": new Set(),
+            "🔥 Free Fire EeUu": new Set(),
       "🎭 Anime": new Set(),
       "ℹ️ Info": new Set(),
       "🔎 Search": new Set(),
